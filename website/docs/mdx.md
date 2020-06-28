@@ -2,6 +2,11 @@
 id: mdx
 title: Powered by MDX
 ---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
+
+$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$$
 
 You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).
 
