@@ -1,11 +1,14 @@
+const remarkMath = require("remark-math");
+const rehypeKatex = require("rehype-katex");
+
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://otter275.github.io',
+  baseUrl: '/math/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'otter275', // Usually your GitHub org/user name.
+  projectName: 'math', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',
@@ -21,11 +24,6 @@ module.exports = {
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
@@ -68,10 +66,6 @@ module.exports = {
               label: 'Blog',
               to: 'blog',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
           ],
         },
       ],
@@ -86,15 +80,13 @@ module.exports = {
           // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'doc1',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [[rehypeKatex, {strict: false}]],
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [[rehypeKatex, {strict: false}]],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

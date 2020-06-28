@@ -2,6 +2,7 @@
 id: mdx
 title: Powered by MDX
 ---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
 
 You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).
 

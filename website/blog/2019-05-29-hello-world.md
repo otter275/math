@@ -7,6 +7,7 @@ author_url: https://github.com/endiliey
 author_image_url: https://avatars1.githubusercontent.com/u/17883920?s=460&v=4
 tags: [hello, docusaurus]
 ---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
 
 Welcome to this blog. This blog is created with [**Docusaurus 2 alpha**](https://v2.docusaurus.io/).
 

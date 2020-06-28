@@ -3,6 +3,7 @@ id: doc1
 title: Style Guide
 sidebar_label: Style Guide
 ---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
