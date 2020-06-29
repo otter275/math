@@ -1,7 +1,16 @@
 const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
 
-module.exports = {
+const algoliaConfig = require('./algolia.config.json');
+
+const isEmptyObject = obj => {
+  for (field in obj) return false;
+  return true;
+};
+
+const isSearchable = !isEmptyObject(algoliaConfig)
+
+const websiteConfig = {
   title: 'Math U',
   tagline: 'by Matt',
   url: 'https://otter275.github.io',
@@ -23,7 +32,6 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
       ],
     },
     footer: {
@@ -39,32 +47,6 @@ module.exports = {
             {
               label: 'Second Doc',
               to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
             },
           ],
         },
@@ -95,3 +77,9 @@ module.exports = {
     ],
   ],
 };
+
+if (isSearchable) {
+  websiteConfig['themeConfig']['algolia'] = algoliaConfig;
+}
+
+module.exports = websiteConfig;
