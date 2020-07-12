@@ -2,19 +2,19 @@ const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
 
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Math U',
+  tagline: 'by Matthew',
   url: 'https://otter275.github.io',
   baseUrl: '/math/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'otter275', // Usually your GitHub org/user name.
   projectName: 'math', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Math U',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Math U Logo',
+        src: 'img/math-u-logo-32x32.png',
       },
       links: [
         {
