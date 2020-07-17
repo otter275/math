@@ -3,7 +3,7 @@ const rehypeKatex = require("rehype-katex");
 
 module.exports = {
   title: 'Math U',
-  tagline: 'by Matthew',
+  tagline: 'by Matt',
   url: 'https://otter275.github.io',
   baseUrl: '/math/',
   favicon: 'img/favicon.png',
@@ -69,7 +69,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Math U, by Matt. Built with Docusaurus.`,
     },
   },
   presets: [
