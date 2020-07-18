@@ -41,12 +41,16 @@ const websiteConfig = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Math U',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: '통계학',
+              to: 'docs/00-statistics/00',
+            },
+            {
+              label: '확률론',
+              to: 'docs/01-probability-theory/00',
             },
           ],
         },
@@ -60,7 +64,7 @@ const websiteConfig = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
+          homePageId: 'math-u',
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [remarkMath],
           rehypePlugins: [[rehypeKatex, {strict: false}]],
