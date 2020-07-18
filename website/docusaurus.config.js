@@ -19,6 +19,10 @@ const websiteConfig = {
   organizationName: 'otter275', // Usually your GitHub org/user name.
   projectName: 'math', // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/nightOwl'),
+      darkTheme: require('prism-react-renderer/themes/nightOwl'),
+    },
     navbar: {
       title: 'Math U',
       logo: {
