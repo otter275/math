@@ -1,6 +1,7 @@
 ---
-id: mdx
-title: Powered by MDX
+id: 'math-u'
+title: 'Math U'
+sidebar_label: 'Math U'
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
 

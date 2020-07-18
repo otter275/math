@@ -3,7 +3,7 @@ name: Publish GitHub Pages
 on:
   push:
     branches:
-      - math
+      - main
 
 jobs:
   build:
