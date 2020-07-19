@@ -22,6 +22,7 @@ const websiteConfig = {
     prism: {
       theme: require('prism-react-renderer/themes/nightOwl'),
       darkTheme: require('prism-react-renderer/themes/nightOwl'),
+      additionalLanguages: ['python', 'r'],
     },
     navbar: {
       title: 'Math U',
