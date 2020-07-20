@@ -2,7 +2,7 @@ module.exports = {
   someSidebar: {
     'Math U': ['math-u'],
     '통계학': ['00-statistics/00', '00-statistics/01', '00-statistics/02'],
-    '확률론': ['01-probability-theory/00', '01-probability-theory/01'],
+    '확률론': ['01-probability-theory/00', '01-probability-theory/01', '01-probability-theory/02'],
     '해석학': ['02-analysis/00'],
     '현대 대수학': ['03-modern-algebra/00'],
     '미적분학': ['04-differential-integral-calculus/00'],
