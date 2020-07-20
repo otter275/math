@@ -5,6 +5,8 @@ sidebar_label: '유명한 확률론 문제들'
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
 
+### 확률론 문제
+
 #### 이번 포스팅에서는 유명한 몬티홀 문제에 대해서 풀어 보겠습니다.
 
 **주의.**  
@@ -18,7 +20,7 @@ sidebar_label: '유명한 확률론 문제들'
 [위키피디아 링크](https://en.wikipedia.org/wiki/Monty_Hall_problem)  
 <br/>
 
-#### 문제 풀이
+### 문제 풀이
 
 자 그러면 지금 부터 조건부 확률의 관점으로 몬티홀 문제를 풀어 보겠습니다.
 
