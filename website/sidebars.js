@@ -9,6 +9,7 @@ module.exports = {
     '집합론': ['05-set-theory/00'],
     '수치해석': ['06-numerical-method/00'],
     '미분방정식': ['07-differential-equation/00'],
-    '수학스터디 미팅': ['08-math-study-meeting/00'],
+    '수학 스터디 미팅': ['08-math-study-meeting/01', '08-math-study-meeting/02',
+    '08-math-study-meeting/03', '08-math-study-meeting/04'],
   },
 };
