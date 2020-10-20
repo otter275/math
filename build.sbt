@@ -1,6 +1,6 @@
 
 val ProjectVersion: String = "0.1.0"
-val ProjectScalaVersion: String = "2.12.11"
+val ProjectScalaVersion: String = "2.12.12"
 
 val GitHubUsername = "otter275"
 val ProjectName = "math"

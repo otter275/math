@@ -2,13 +2,15 @@ const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
 
 const algoliaConfig = require('./algolia.config.json');
+const googleAnalyticsConfig = require('./google-analytics.config.json');
 
 const isEmptyObject = obj => {
   for (field in obj) return false;
   return true;
 };
 
-const isSearchable = !isEmptyObject(algoliaConfig)
+const isSearchable = !isEmptyObject(algoliaConfig);
+const hasGoogleAnalytics = !isEmptyObject(googleAnalyticsConfig);
 
 const websiteConfig = {
   title: 'Math U',
@@ -30,7 +32,7 @@ const websiteConfig = {
         alt: 'Math U Logo',
         src: 'img/math-u-logo-32x32.png',
       },
-      links: [
+      items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
@@ -68,8 +70,6 @@ const websiteConfig = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'math-u',
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [remarkMath],
           rehypePlugins: [[rehypeKatex, {strict: false}]],
@@ -89,6 +89,9 @@ const websiteConfig = {
 
 if (isSearchable) {
   websiteConfig['themeConfig']['algolia'] = algoliaConfig;
+}
+if (hasGoogleAnalytics) {
+  websiteConfig['themeConfig']['googleAnalytics'] = googleAnalyticsConfig;
 }
 
 module.exports = websiteConfig;
