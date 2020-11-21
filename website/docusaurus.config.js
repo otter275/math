@@ -85,6 +85,16 @@ const websiteConfig = {
       },
     ],
   ],
+  plugins: [
+    [
+      require.resolve('docusaurus-lunr-search'), {
+        languages: [
+          'en',
+          // 'ko', // It's not supported yet.
+        ]
+      }
+    ],
+  ],
 };
 
 if (isSearchable) {

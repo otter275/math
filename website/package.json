@@ -15,6 +15,7 @@
     "@docusaurus/core": "^2.0.0-alpha.68",
     "@docusaurus/preset-classic": "^2.0.0-alpha.68",
     "clsx": "^1.1.1",
+    "docusaurus-lunr-search": "^2.1.7",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "rehype-katex": "^3.1.0",
