@@ -1,8 +1,8 @@
-name: Publish GitHub Pages
+name: Build Docusaurus
 
 on:
   push:
-    branches:
+    branches-ignore:
       - main
 
 jobs:
@@ -49,16 +49,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Build and publish website
-        env:
-          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Render markdown and build website
         run: |
           sbt clean \
             docusaurGenerateAlgoliaConfigFile \
             docusaurGenerateGoogleAnalyticsConfigFile \
             docusaurInstall \
             docusaurCleanBuild \
-            docusaurBuild \
-            publishToGitHubPages
+            docusaurBuild
